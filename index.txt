@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+
+<!-- REQUIRED FOR PARALLAX -->
+<script type="text/javascript" language="JavaScript" src="js/jquery.jparallax.min.js" ></script>
+<script type="text/javascript" language="JavaScript" src="js/jquery.event.frame.js" ></script>
+
+<link lang="text/css" href="css/styles.css" />
+
+<script type="text/javascript">
+jQuery(document).ready(function() 
+{
+	$('#parallax .parallax-layer')
+	.parallax({
+		mouseport: $('#parallax')
+	});
+});
+</script>  
+<!-- /REQUIRED FOR PARALLAX -->
+
+<title>jQuery4u Demo - The Parallax Effect</title>
+
+<style>
+#content { background-color:#FFFFFF; width:950px; min-height:550px; text-align:left; padding:0px;  }
+h1 { padding:20px; background-color:gray; color:white; margin:0; text-shadow: #9E9B9B 2px 2px 2px;  text-align:center;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E3E1E1', endColorstr='#CCCACA'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#E3E1E1), to(#CCCACA)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #E3E1E1,  #CCCACA); /* for firefox 3.6+ */ 
+}
+.large { font-size:22px; }
+.orange { color:orange; }
+.italic { font-style:italic }
+.textmiddle {vertical-align:middle;} 
+.padout { padding-left:25px; padding-right:25px; }
+.rounded-corners {
+     -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -khtml-border-radius: 40px;
+    border-radius: 40px;
+}
+.rounded-corners-top {
+     -moz-border-top-radius: 40px;
+    -webkit-border-radius: 40px;
+    -khtml-border-radius: 40px;
+    border-radius: 40px;
+}
+h2 { color:blue; font-size:22px; color:white; background-color:gray; padding:10px 10px 10px 20px;
+     -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -khtml-border-radius: 40px;
+    border-radius: 40px;
+	text-shadow: #9E9B9B 2px 2px 2px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E3E1E1', endColorstr='#CCCACA'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#E3E1E1), to(#CCCACA)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #E3E1E1,  #CCCACA); /* for firefox 3.6+ */ 
+  }
+  p {
+	margin: 20px !important;
+}
+.scrolldown { padding-left:20px; color:#EDECE8; font-size:40px; font-weight:bold; vertical-align:middle;
+	text-shadow: #6374AB 2px 2px 2px;
+ }
+ #page-wrap {
+     border: 1px solid orange;
+    margin: 10px auto;
+    width: 950px;
+	}
+ #parallax-header { height:200px; background-color:gray;  }
+ #parallax {position:relative; overflow:hidden; width:950px; height:250px;
+	background-image:url('images/background.jpg');
+ }
+.parallax-viewport {
+    position: relative;     /* relative, absolute, fixed */
+    overflow: hidden;
+}
+.parallax-layer {
+    position: absolute;
+}
+</style>
+
+</head>
+<body>
+<div id="page-wrap">
+<div id="header" >
+	<h1>jQuery4u Demo - The Parallax Effect</h1>
+</div>
+
+<div id="content">
+
+<!-- REQUIRED FOR PARALLAX -->
+<div id="parallax" class="clear">
+	<div class="parallax-layer" style="width:1200px; height:250px;">
+		<img src="images/grass.png" alt="" style="width:1200px; height:250px;"/>
+	</div>
+	<div class="parallax-layer" style="width:500px; height:250px;">
+		<img src="images/frog2.png" alt="" style="width:500px; height:250px;"/>
+	</div>
+   <div class="parallax-layer" style="width:1200px; height:300px;">
+		<img src="images/butterflies3.png" alt="" style="width:1200px; height:300px;"/>
+   </div>
+</div>
+<!-- /REQUIRED FOR PARALLAX -->
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae sapien ac nulla vehicula luctus. Ut ut tortor ut quam interdum faucibus. Morbi sit amet pellentesque libero. Phasellus sed velit leo. Ut faucibus, massa in auctor ultrices, urna tortor condimentum dui, ac dictum mauris augue et neque. Quisque vehicula lobortis odio lacinia semper. Quisque pellentesque diam non sem pellentesque tempor. Vivamus luctus, nisl ac porta fringilla, enim eros ullamcorper justo, ac pellentesque quam velit quis nulla. Nulla varius justo id metus eleifend sed gravida nisl tempus. In hac habitasse platea dictumst. Nulla sed odio massa, sit amet vestibulum nulla. Mauris at justo nulla. Curabitur vel risus lacus.
+</p>
+<p>
+Aenean suscipit felis sit amet tortor tincidunt ac ullamcorper neque fringilla. Vestibulum a neque elit, ac vestibulum dui. Maecenas et lectus vitae lorem adipiscing interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris euismod elit mi, eu tempor eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis eu facilisis dolor. In hac habitasse platea dictumst. Sed ac lectus vehicula arcu interdum adipiscing eget eget mi. Maecenas pharetra orci ut enim gravida egestas pulvinar eu nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas eleifend tellus at augue consectetur faucibus nec vel tellus. Pellentesque pulvinar mi sit amet felis tristique vel volutpat eros elementum. Phasellus auctor metus tincidunt purus commodo placerat. Vestibulum nec aliquam nisi. Donec nec nisl urna. Integer fringilla tellus et felis adipiscing sit amet aliquam libero sodales. Duis laoreet placerat purus, nec vehicula justo pharetra eu. Etiam velit risus, consectetur eget viverra eu, tincidunt ut libero. 
+</p>
+
+</div>
+
+	<p><a href="http://www.jquery4u.com/demos/">< Back to demos</a> | <a href="http://jquery4u.com/animation/jquery-parallax-tutorial/">View tutorial ></a></p>
+
+</div> <!-- end page wrap -->
+
+<!-- BSA AdPacks code. Please ignore and remove. -->
+<script src="http://www.jquery4u.com/demos/js/adpacks.js" async></script>
+
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11577561-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
